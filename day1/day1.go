@@ -1,18 +1,12 @@
-package main
+package day1
 
 import (
 	"bufio"
-	"fmt"
 	"os"
 	"strconv"
 )
 
-func main() {
-
-	fmt.Println(star1())
-	fmt.Println(star2())
-
-}
+var inputPath = "./day1/input.txt"
 
 func check(e error) {
 	if e != nil {
@@ -20,8 +14,8 @@ func check(e error) {
 	}
 }
 
-func star1() int {
-	file, error := os.Open("input.txt")
+func Star1() int {
+	file, error := os.Open(inputPath)
 	check(error)
 	scanner := bufio.NewScanner(file)
 
@@ -42,11 +36,11 @@ func star1() int {
 	return count
 }
 
-func star2() int {
-	file, error := os.Open("input.txt")
+func Star2() int {
+	file, error := os.Open(inputPath)
 	check(error)
 
-	input := parseInputToArray(file)
+	input := parseInput(file)
 
 	var count int
 	for i := 0; i < len(input)-3; i++ {
@@ -60,7 +54,7 @@ func star2() int {
 	return count
 }
 
-func parseInputToArray(file *os.File) []int {
+func parseInput(file *os.File) []int {
 	scanner := bufio.NewScanner(file)
 	input := make([]int, 0)
 	for scanner.Scan() {
