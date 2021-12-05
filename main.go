@@ -17,6 +17,6 @@ func main() {
 	// fmt.Println(day4.Star1())
 	// fmt.Println(day4.Star2())
 	// fmt.Println(day5.Star1())
-	fmt.Println(day5.Star2())
+	fmt.Println(day5.Star1())
 
 }

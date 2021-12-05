@@ -42,28 +42,30 @@ func Star1() string {
 		if !isLineValid(line) {
 			continue
 		}
-		if isHorizontal(line) {
-			isIncreasing := line.From.X < line.To.X
-			if isIncreasing {
-				for i := line.From.X; i <= line.To.X; i++ {
-					diagram[line.From.Y][i] += 1
-				}
-			} else {
-				for i := line.From.X; i >= line.To.X; i-- {
-					diagram[line.From.Y][i] += 1
-				}
-			}
+		x := line.From.X
+		y := line.From.Y
+		var distance int
+		if line.From.X != line.To.X {
+			distance = int(math.Abs(float64(line.From.X - line.To.X)))
+		} else {
+			distance = int(math.Abs(float64(line.From.Y - line.To.Y)))
 		}
-		if isVertical(line) {
-			isIncreasing := line.From.Y < line.To.Y
-			if isIncreasing {
-				for i := line.From.Y; i <= line.To.Y; i++ {
-					diagram[i][line.From.X] += 1
-				}
-			} else {
-				for i := line.From.Y; i >= line.To.Y; i-- {
-					diagram[i][line.From.X] += 1
-				}
+
+		for i := 0; i <= distance; i++ {
+
+			diagram[y][x] += 1
+
+			if line.From.X < line.To.X {
+				x += 1
+			}
+			if line.From.X > line.To.X {
+				x -= 1
+			}
+			if line.From.Y < line.To.Y {
+				y += 1
+			}
+			if line.From.Y > line.To.Y {
+				y -= 1
 			}
 		}
 	}
