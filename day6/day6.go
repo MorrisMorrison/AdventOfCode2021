@@ -41,112 +41,32 @@ func Star1() string {
 	return ""
 }
 
-// Buffer
 func Star2() string {
 	file, error := os.Open(inputPath)
 	check(error)
 
 	inputs := parseInput(file)
-	chunks := make([][]int, 1000000)
-	for i := 0; i < len(chunks); i++ {
-		chunks[i] = make([]int, 50000)
-		if i == 0 {
-			for index, input := range inputs {
-				chunks[0][index] = input
-			}
-		}
+	days := 256
+	result := make(map[int]int)
+	for _, input := range inputs {
+		result[input] += 1
 	}
-	daysCount := 256
-	countElements := len(inputs)
-	currentPosition := len(inputs)
-	for i := 0; i < daysCount; i++ {
-		for index, _ := range chunks {
-			for j := 0; j < countElements; j++ {
-				if chunks[index][j] == 0 {
-					chunks[index][j] = 6
-					chunks[index][currentPosition] = 8
-					countElements++
-					currentPosition++
-				} else {
-					chunks[index][j] -= 1
-					currentPosition++
-				}
-
-				if currentPosition == 9999 || j == countElements-1 {
-					j = 0
-					currentPosition = 0
-					index++
-				}
-			}
+	for i := 0; i < days; i++ {
+		current := result[0]
+		for j := 1; j < 10; j++ {
+			result[j-1] = result[j]
 		}
+		result[6] += current
+		result[8] = current
 	}
 
-	// fmt.Println(inputs)
-	count := len(inputs)
-	fmt.Println("COUNT LANTERNFISH ", count)
+	sum := 0
+	for _, v := range result {
+		sum += v
+	}
+	fmt.Println(sum)
+
 	return ""
-}
-
-// chunks
-
-// func Star2() string {
-// 	file, error := os.Open(inputPath)
-// 	check(error)
-
-// 	inputs := parseInput(file)
-// 	chunks := make([][]int, 1000000)
-// 	for i := 0; i < len(chunks); i++ {
-// 		chunks[i] = make([]int, 50000)
-// 		if i == 0 {
-// 			for index, input := range inputs {
-// 				chunks[0][index] = input
-// 			}
-// 		}
-// 	}
-// 	daysCount := 256
-// 	countElements := len(inputs)
-// 	currentPosition := len(inputs)
-// 	for i := 0; i < daysCount; i++ {
-// 		for index, _ := range chunks {
-// 			for j := 0; j < countElements; j++ {
-// 				if chunks[index][j] == 0 {
-// 					chunks[index][j] = 6
-// 					chunks[index][currentPosition] = 8
-// 					countElements++
-// 					currentPosition++
-// 				} else {
-// 					chunks[index][j] -= 1
-// 					currentPosition++
-// 				}
-
-// 				if currentPosition == 9999 || j == countElements-1 {
-// 					j = 0
-// 					currentPosition = 0
-// 					index++
-// 				}
-// 			}
-// 		}
-// 	}
-
-// 	// fmt.Println(inputs)
-// 	count := len(inputs)
-// 	fmt.Println("COUNT LANTERNFISH ", count)
-// 	return ""
-// }
-
-func isChunkFinished(chunk []int, pos int) bool {
-	part := chunk[pos:]
-	for _, p := range part {
-		if p != 0 {
-			return false
-		}
-	}
-
-	return true
-}
-
-func isChunkFull(chunk []int) bool {
-	return chunk[len(chunk)-1] != 0
 }
 
 func parseInput(file *os.File) []int {

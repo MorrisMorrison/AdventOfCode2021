@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/AdventOfCode2021/day7"
+	"github.com/AdventOfCode2021/day6"
 )
 
 func main() {
@@ -19,8 +19,9 @@ func main() {
 	// fmt.Println(day5.Star1())
 	// fmt.Println(day5.Star2())
 	// fmt.Println(day6.Star1())
-	// fmt.Println(day6.Star2())
-	fmt.Println(day7.Star1())
-	fmt.Println(day7.Star2())
+	fmt.Println(day6.Star2())
+
+	// fmt.Println(day7.Star1())
+	// fmt.Println(day7.Star2())
 
 }
