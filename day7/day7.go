@@ -2,7 +2,6 @@ package day7
 
 import (
 	"bufio"
-	"fmt"
 	"math"
 	"os"
 	"strconv"
@@ -27,78 +26,48 @@ func Star1() string {
 	check(error)
 
 	inputs := parseInput(file)
-	result := make([]resultEntry, 0)
+	result := 0
 	for i := 0; i < len(inputs); i++ {
 		fuelAmountTotal := 0
 		for _, input := range inputs {
-			fuelAmount := int(math.Abs(float64(input - i)))
-			fuelAmountTotal += fuelAmount
+			fuelAmountTotal += int(math.Abs(float64(input - i)))
 		}
 
-		result = append(result, resultEntry{Index: i, Count: fuelAmountTotal})
+		if fuelAmountTotal < result || i == 0 {
+			result = fuelAmountTotal
+		}
+
 	}
 
-	leastResult := findSmallestResult(result)
-
-	fmt.Println("LEAST FUEL")
-	fmt.Println("POSITION: ", leastResult.Index)
-	fmt.Println("AMOUNT: ", leastResult.Count)
-
-	return ""
+	return strconv.Itoa(result)
 }
+
 func Star2() string {
 	file, error := os.Open(inputPath)
 	check(error)
 
 	inputs := parseInput(file)
-	result := make([]resultEntry, 0)
+	result := 0
 
 	for i := 0; i < len(inputs); i++ {
 		fuelAmountTotal := 0
 		for _, input := range inputs {
-			c := int(math.Abs(float64(input - i)))
-			fuelAmount := 0
+			distance := int(math.Abs(float64(input - i)))
 
-			for x := 0; x < c; x++ {
-				fuelAmount += x + 1
+			for x := 0; x < distance; x++ {
+				fuelAmountTotal += x + 1
 			}
 
-			fuelAmountTotal += fuelAmount
 		}
 
-		result = append(result, resultEntry{Index: i, Count: fuelAmountTotal})
-	}
-
-	leastResult := findSmallestResult(result)
-
-	fmt.Println("LEAST FUEL")
-	fmt.Println("POSITION: ", leastResult.Index)
-	fmt.Println("AMOUNT: ", leastResult.Count)
-
-	return ""
-}
-
-func findSmallestResult(result []resultEntry) resultEntry {
-	smallest := result[0]
-
-	for _, res := range result {
-		if res.Count < smallest.Count {
-			smallest = res
+		if fuelAmountTotal < result || i == 0 {
+			result = fuelAmountTotal
 		}
+
 	}
 
-	return smallest
-
+	return strconv.Itoa(result)
 }
-
-// func Star2() string {
-// 	file, error := os.Open(inputPath)
-// 	check(error)
-
-// 	input := parseInput(file)
-
-// 	return ""
-// }
 
 func parseInput(file *os.File) []int {
 	scanner := bufio.NewScanner(file)
