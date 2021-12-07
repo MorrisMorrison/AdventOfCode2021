@@ -34,9 +34,7 @@ func Star1() string {
 	input := parseInput(file)
 	diagram := make([][]int, 1000)
 	for i := 0; i < len(diagram); i++ {
-
 		diagram[i] = make([]int, 1000)
-
 	}
 	for _, line := range input {
 		if !isLineValid(line) {
