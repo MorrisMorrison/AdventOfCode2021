@@ -16,11 +16,6 @@ func check(e error) {
 	}
 }
 
-type resultEntry struct {
-	Index int
-	Count int
-}
-
 func Star1() string {
 	file, error := os.Open(inputPath)
 	check(error)

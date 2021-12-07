@@ -2,7 +2,6 @@ package day6
 
 import (
 	"bufio"
-	"fmt"
 	"os"
 	"strconv"
 	"strings"
@@ -24,21 +23,19 @@ func Star1() string {
 	daysCount := 80
 
 	for i := 0; i < daysCount; i++ {
-		for index, input := range inputs {
+		for j, input := range inputs {
 			if input == 0 {
-				inputs[index] = 6
+				inputs[j] = 6
 				inputs = append(inputs, 8)
 			} else {
-				inputs[index] -= 1
+				inputs[j] -= 1
 
 			}
 
 		}
 	}
 
-	count := len(inputs)
-	fmt.Println("COUNT LANTERNFISH ", count)
-	return ""
+	return strconv.Itoa(len(inputs))
 }
 
 func Star2() string {
@@ -64,9 +61,8 @@ func Star2() string {
 	for _, v := range result {
 		sum += v
 	}
-	fmt.Println(sum)
 
-	return ""
+	return strconv.Itoa(sum)
 }
 
 func parseInput(file *os.File) []int {

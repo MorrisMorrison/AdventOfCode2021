@@ -32,8 +32,6 @@ func Star1() string {
 		for index, board := range input {
 			isBingo = checkBingo(board)
 			if isBingo {
-				fmt.Println("BINGO !!!")
-				fmt.Println(board)
 				sum = calculateBoardSum(board)
 				break
 			}
@@ -46,11 +44,7 @@ func Star1() string {
 		}
 		finalDraw = draw
 	}
-	fmt.Printf("FINAL DRAW %v", finalDraw)
-	fmt.Println()
-	fmt.Printf("SUM %v", sum)
-
-	return ""
+	return strconv.Itoa(finalDraw) + " - " + strconv.Itoa(sum)
 }
 
 func calculateBoardSum(board bingoBoard) int {
@@ -167,11 +161,8 @@ func Star2() string {
 			break
 		}
 	}
-	fmt.Printf("FINAL DRAW %v", finalDraw)
-	fmt.Println()
-	fmt.Printf("SUM %v", sum)
 
-	return ""
+	return strconv.Itoa(finalDraw) + " " + strconv.Itoa(sum)
 }
 
 func parseInput(file *os.File) []bingoBoard {

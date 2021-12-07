@@ -72,10 +72,8 @@ func Star1() string {
 	for _, row := range diagram {
 		fmt.Println(row)
 	}
-	fmt.Println()
-	fmt.Println("Overlapping lines: ", countOverlappingLines(diagram))
 
-	return ""
+	return strconv.Itoa(countOverlappingLines(diagram))
 }
 
 func Star2() string {
@@ -122,10 +120,8 @@ func Star2() string {
 		fmt.Println(row)
 	}
 
-	fmt.Println()
-	fmt.Println("Overlapping lines: ", countOverlappingLines(diagram))
+	return strconv.Itoa(countOverlappingLines(diagram))
 
-	return ""
 }
 
 func parsePoint(text string) Point {
