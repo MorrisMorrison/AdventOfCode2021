@@ -1,0 +1,136 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/morrismorrison/Development/AdventOfCode2021/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210905.0/
+0	.vscode/launch.json	/^        {$/;"	o	array:configurations
+AdventOfCode2021	README.md	/^# AdventOfCode2021$/;"	c
+From	day5/day5.go	/^	From Point$/;"	m	struct:day5.Line	typeref:typename:Point
+Line	day5/day5.go	/^type Line struct {$/;"	s	package:day5
+Point	day5/day5.go	/^type Point struct {$/;"	s	package:day5
+Star1	day1/day1.go	/^func Star1() int {$/;"	f	package:day1	typeref:typename:int
+Star1	day10/day10.go	/^func Star1() string {$/;"	f	package:day10	typeref:typename:string
+Star1	day11/day11.go	/^func Star1() string {$/;"	f	package:day11	typeref:typename:string
+Star1	day2/day2.go	/^func Star1() submarinePosition {$/;"	f	package:day2	typeref:typename:submarinePosition
+Star1	day3/day3.go	/^func Star1() string {$/;"	f	package:day3	typeref:typename:string
+Star1	day4/day4.go	/^func Star1() string {$/;"	f	package:day4	typeref:typename:string
+Star1	day5/day5.go	/^func Star1() string {$/;"	f	package:day5	typeref:typename:string
+Star1	day6/day6.go	/^func Star1() string {$/;"	f	package:day6	typeref:typename:string
+Star1	day7/day7.go	/^func Star1() string {$/;"	f	package:day7	typeref:typename:string
+Star1	day8/day8.go	/^func Star1() string {$/;"	f	package:day8	typeref:typename:string
+Star1	day9/day9.go	/^func Star1() string {$/;"	f	package:day9	typeref:typename:string
+Star1	template.go	/^func Star1() string {$/;"	f	package:main	typeref:typename:string
+Star2	day1/day1.go	/^func Star2() int {$/;"	f	package:day1	typeref:typename:int
+Star2	day10/day10.go	/^func Star2() string {$/;"	f	package:day10	typeref:typename:string
+Star2	day11/day11.go	/^func Star2() string {$/;"	f	package:day11	typeref:typename:string
+Star2	day2/day2.go	/^func Star2() submarinePosition {$/;"	f	package:day2	typeref:typename:submarinePosition
+Star2	day3/day3.go	/^func Star2() string {$/;"	f	package:day3	typeref:typename:string
+Star2	day4/day4.go	/^func Star2() string {$/;"	f	package:day4	typeref:typename:string
+Star2	day5/day5.go	/^func Star2() string {$/;"	f	package:day5	typeref:typename:string
+Star2	day6/day6.go	/^func Star2() string {$/;"	f	package:day6	typeref:typename:string
+Star2	day7/day7.go	/^func Star2() string {$/;"	f	package:day7	typeref:typename:string
+Star2	day8/day8.go	/^func Star2() string {$/;"	f	package:day8	typeref:typename:string
+Star2	day9/day9.go	/^func Star2() string {$/;"	f	package:day9	typeref:typename:string
+Star2	template.go	/^func Star2() string {$/;"	f	package:main	typeref:typename:string
+To	day5/day5.go	/^	To   Point$/;"	m	struct:day5.Line	typeref:typename:Point
+X	day5/day5.go	/^	X int$/;"	m	struct:day5.Point	typeref:typename:int
+Y	day5/day5.go	/^	Y int$/;"	m	struct:day5.Point	typeref:typename:int
+_draws	day4/day4.go	/^var _draws []int$/;"	v	package:day4	typeref:typename:[]int
+aim	day2/day2.go	/^	aim                int$/;"	m	struct:day2.submarinePosition	typeref:typename:int
+bingoBoard	day4/day4.go	/^type bingoBoard [][]int$/;"	t	package:day4	typeref:typename:[][]int
+calculateBoardSum	day4/day4.go	/^func calculateBoardSum(board bingoBoard) int {$/;"	f	package:day4	typeref:typename:int
+check	day1/day1.go	/^func check(e error) {$/;"	f	package:day1
+check	day10/day10.go	/^func check(e error) {$/;"	f	package:day10
+check	day11/day11.go	/^func check(e error) {$/;"	f	package:day11
+check	day2/day2.go	/^func check(e error) {$/;"	f	package:day2
+check	day3/day3.go	/^func check(e error) {$/;"	f	package:day3
+check	day4/day4.go	/^func check(e error) {$/;"	f	package:day4
+check	day5/day5.go	/^func check(e error) {$/;"	f	package:day5
+check	day6/day6.go	/^func check(e error) {$/;"	f	package:day6
+check	day7/day7.go	/^func check(e error) {$/;"	f	package:day7
+check	day8/day8.go	/^func check(e error) {$/;"	f	package:day8
+check	day9/day9.go	/^func check(e error) {$/;"	f	package:day9
+check	template.go	/^func check(e error) {$/;"	f	package:main
+checkBingo	day4/day4.go	/^func checkBingo(board [][]int) bool {$/;"	f	package:day4	typeref:typename:bool
+compareSlices	day3/day3.go	/^func compareSlices(slice1 []int, slice2 []int) bool {$/;"	f	package:day3	typeref:typename:bool
+configurations	.vscode/launch.json	/^    "configurations": [$/;"	a
+contains	day4/day4.go	/^func contains(s []int, e int) bool {$/;"	f	package:day4	typeref:typename:bool
+contains	day8/day8.go	/^func contains(s string, r rune) bool {$/;"	f	package:day8	typeref:typename:bool
+countOverlappingLines	day5/day5.go	/^func countOverlappingLines(diagram [][]int) int {$/;"	f	package:day5	typeref:typename:int
+day1	day1/day1.go	/^package day1$/;"	p
+day10	day10/day10.go	/^package day10$/;"	p
+day11	day11/day11.go	/^package day11$/;"	p
+day2	day2/day2.go	/^package day2$/;"	p
+day3	day3/day3.go	/^package day3$/;"	p
+day4	day4/day4.go	/^package day4$/;"	p
+day5	day5/day5.go	/^package day5$/;"	p
+day6	day6/day6.go	/^package day6$/;"	p
+day7	day7/day7.go	/^package day7$/;"	p
+day8	day8/day8.go	/^package day8$/;"	p
+day9	day9/day9.go	/^package day9$/;"	p
+decode	day8/day8.go	/^func decode(patterns map[int]string, field string) int {$/;"	f	package:day8	typeref:typename:int
+down	day2/day2.go	/^	down    instructionType = 1$/;"	c	package:day2	typeref:type:instructionType
+everyElementMatches	day4/day4.go	/^func everyElementMatches(input []int, matchingElement int) bool {$/;"	f	package:day4	typeref:typename:bool
+findLeastCommonBit	day3/day3.go	/^func findLeastCommonBit(input []int) int {$/;"	f	package:day3	typeref:typename:int
+findMostCommonBit	day3/day3.go	/^func findMostCommonBit(input []int) int {$/;"	f	package:day3	typeref:typename:int
+findOxygenGeneratorRating	day3/day3.go	/^func findOxygenGeneratorRating(input [][]int) []int {$/;"	f	package:day3	typeref:typename:[]int
+findRowsWithMostCommonBit	day3/day3.go	/^func findRowsWithMostCommonBit(input [][]int, mostCommonBit, col int) [][]int {$/;"	f	package:day3	typeref:typename:[][]int
+forward	day2/day2.go	/^	forward instructionType = 2$/;"	c	package:day2	typeref:type:instructionType
+getColumn	day3/day3.go	/^func getColumn(input [][]int, colNum int) []int {$/;"	f	package:day3	typeref:typename:[]int
+getColumn	day4/day4.go	/^func getColumn(input [][]int, colNum int) []int {$/;"	f	package:day4	typeref:typename:[]int
+getRow	day3/day3.go	/^func getRow(input [][]int, rowNum int) []int {$/;"	f	package:day3	typeref:typename:[]int
+getRow	day4/day4.go	/^func getRow(input [][]int, rowNum int) []int {$/;"	f	package:day4	typeref:typename:[]int
+horizontalPosition	day2/day2.go	/^	horizontalPosition int$/;"	m	struct:day2.submarinePosition	typeref:typename:int
+inputPath	day1/day1.go	/^var inputPath = ".\/day1\/input.txt"$/;"	v	package:day1
+inputPath	day10/day10.go	/^var inputPath = ".\/day10\/input.txt"$/;"	v	package:day10
+inputPath	day11/day11.go	/^var inputPath = ".\/day11\/input.txt"$/;"	v	package:day11
+inputPath	day2/day2.go	/^var inputPath = ".\/day2\/input.txt"$/;"	v	package:day2
+inputPath	day3/day3.go	/^var inputPath = ".\/day3\/input.txt"$/;"	v	package:day3
+inputPath	day4/day4.go	/^var inputPath = ".\/day4\/input.txt"$/;"	v	package:day4
+inputPath	day5/day5.go	/^var inputPath = ".\/day5\/input.txt"$/;"	v	package:day5
+inputPath	day6/day6.go	/^var inputPath = ".\/day6\/input.txt"$/;"	v	package:day6
+inputPath	day7/day7.go	/^var inputPath = ".\/day7\/input.txt"$/;"	v	package:day7
+inputPath	day8/day8.go	/^var inputPath = ".\/day8\/input.txt"$/;"	v	package:day8
+inputPath	day9/day9.go	/^var inputPath = ".\/day9\/input.txt"$/;"	v	package:day9
+inputPath	template.go	/^var inputPath = ".\/template\/input.txt"$/;"	v	package:main
+instruction	day2/day2.go	/^type instruction struct {$/;"	s	package:day2
+instructionType	day2/day2.go	/^	instructionType instructionType$/;"	m	struct:day2.instruction	typeref:typename:instructionType
+instructionType	day2/day2.go	/^type instructionType int$/;"	t	package:day2	typeref:typename:int
+isHorizontal	day5/day5.go	/^func isHorizontal(line Line) bool {$/;"	f	package:day5	typeref:typename:bool
+isLineValid	day5/day5.go	/^func isLineValid(line Line) bool {$/;"	f	package:day5	typeref:typename:bool
+isVertical	day5/day5.go	/^func isVertical(line Line) bool {$/;"	f	package:day5	typeref:typename:bool
+main	main.go	/^func main() {$/;"	f	package:main
+main	main.go	/^package main$/;"	p
+main	template.go	/^package main$/;"	p
+markNumber	day4/day4.go	/^func markNumber(board bingoBoard, draw int) bingoBoard {$/;"	f	package:day4	typeref:typename:bingoBoard
+mode	.vscode/launch.json	/^            "mode": "auto",$/;"	s	object:configurations.0
+name	.vscode/launch.json	/^            "name": "Launch Package",$/;"	s	object:configurations.0
+parseInput	day1/day1.go	/^func parseInput(file *os.File) []int {$/;"	f	package:day1	typeref:typename:[]int
+parseInput	day10/day10.go	/^func parseInput(file *os.File) [][]int {$/;"	f	package:day10	typeref:typename:[][]int
+parseInput	day11/day11.go	/^func parseInput(file *os.File) [][]int {$/;"	f	package:day11	typeref:typename:[][]int
+parseInput	day2/day2.go	/^func parseInput(file *os.File) []instruction {$/;"	f	package:day2	typeref:typename:[]instruction
+parseInput	day3/day3.go	/^func parseInput(file *os.File) [][]int {$/;"	f	package:day3	typeref:typename:[][]int
+parseInput	day4/day4.go	/^func parseInput(file *os.File) []bingoBoard {$/;"	f	package:day4	typeref:typename:[]bingoBoard
+parseInput	day5/day5.go	/^func parseInput(file *os.File) []Line {$/;"	f	package:day5	typeref:typename:[]Line
+parseInput	day6/day6.go	/^func parseInput(file *os.File) []int {$/;"	f	package:day6	typeref:typename:[]int
+parseInput	day7/day7.go	/^func parseInput(file *os.File) []int {$/;"	f	package:day7	typeref:typename:[]int
+parseInput	day8/day8.go	/^func parseInput(file *os.File) []string {$/;"	f	package:day8	typeref:typename:[]string
+parseInput	day9/day9.go	/^func parseInput(file *os.File) [][]int {$/;"	f	package:day9	typeref:typename:[][]int
+parseInput	template.go	/^func parseInput(file *os.File) [][]int {$/;"	f	package:main	typeref:typename:[][]int
+parseInstructionType	day2/day2.go	/^func parseInstructionType(instructionType string) instructionType {$/;"	f	package:day2	typeref:typename:instructionType
+parsePoint	day5/day5.go	/^func parsePoint(text string) Point {$/;"	f	package:day5	typeref:typename:Point
+program	.vscode/launch.json	/^            "program": "main.go"$/;"	s	object:configurations.0
+removeRow	day3/day3.go	/^func removeRow(slice [][]int, s int) [][]int {$/;"	f	package:day3	typeref:typename:[][]int
+request	.vscode/launch.json	/^            "request": "launch",$/;"	s	object:configurations.0
+scrubberRatingRating	day3/day3.go	/^func scrubberRatingRating(input [][]int) []int {$/;"	f	package:day3	typeref:typename:[]int
+submarinePosition	day2/day2.go	/^type submarinePosition struct {$/;"	s	package:day2
+type	.vscode/launch.json	/^            "type": "go",$/;"	s	object:configurations.0
+up	day2/day2.go	/^	up      instructionType = 0$/;"	c	package:day2	typeref:type:instructionType
+value	day2/day2.go	/^	value           int$/;"	m	struct:day2.instruction	typeref:typename:int
+verticalPosition	day2/day2.go	/^	verticalPosition   int$/;"	m	struct:day2.submarinePosition	typeref:typename:int
